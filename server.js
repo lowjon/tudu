@@ -6,7 +6,7 @@ const db = massive.connectSync({
 })
 
 var app = module.exports = express();
-app.use(express.static(__dirname + '/app'));
+app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
 
 app.set('db', db);
