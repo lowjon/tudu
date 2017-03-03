@@ -3,7 +3,7 @@ angular.module('app').service('mainSrvc', function($http){
   this.getData = function(){
     return $http({
       method: 'GET',
-      url: './'
+      url: '/api/notes'
     }).then(function(res){
       return res.data
     })
@@ -11,7 +11,7 @@ angular.module('app').service('mainSrvc', function($http){
   this.putData = function(){
     return $http({
       method: 'PUT',
-      url: './'
+      url: '/api/addnote'
     }).then(function(res){
       return res.data
     })
@@ -19,7 +19,7 @@ angular.module('app').service('mainSrvc', function($http){
   this.postData = function(){
     return $http({
       method: 'POST',
-      url: './'
+      url: '/api/selected'
     }).then(function(res){
       return res.data
     })
@@ -27,7 +27,7 @@ angular.module('app').service('mainSrvc', function($http){
   this.deleteData = function(){
     return $http({
       method: 'DELETE',
-      url: './'
+      url: '/api/deletenote'
     }).then(function(res){
       return res.data
     })
