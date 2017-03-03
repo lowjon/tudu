@@ -16,10 +16,11 @@ angular.module('app').service('mainSrvc', function($http){
       return res.data
     })
   }
-  this.postData = function(){
+  this.postData = function(chk, id){
     return $http({
       method: 'POST',
-      url: '/api/selected'
+      url: '/api/selected',
+      data: {status: chk, id: id}
     }).then(function(res){
       return res.data
     })

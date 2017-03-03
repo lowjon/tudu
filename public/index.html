@@ -2,13 +2,18 @@
 <html>
   <head ng-app="app">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>To-Do-List</title>
     <link type="text/css" rel="stylesheet" href="./reset.css"/>
   </head>
   <body ng-controller="mainCtrl">
-    <p>
-      Hello
-    </p>
+    <header class='header'></header>
+
+    <todo ng-repeat="note in notes" class='note-card'>
+      <input type="checkbox" id={{note.id}} ng-model="checkbox" ng-click="postData(checkbox, id)">
+      <label>{{note.data}}</label>
+    </todo>
+
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.js"></script>
     <script src="./js/app.js"></script>
     <script src="./js/mainCtrl.js"></script>

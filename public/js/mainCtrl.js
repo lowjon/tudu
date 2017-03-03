@@ -10,8 +10,8 @@ angular.module('app').controller('mainCtrl', function($scope, mainSrvc){
       console.log(res)
     })
   }
-  $scope.postData = function(){
-    mainSrvc.getData().then(function(res){
+  $scope.postData = function(chk, id){
+    mainSrvc.postData(chk, id).then(function(res){
       console.log(res)
     })
   }
