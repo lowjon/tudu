@@ -29,3 +29,31 @@ body{
   color: white;
   font-size: 25px;
 }
+
+.filler{
+  height: 8vh;
+}
+
+.add-item-section{
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  margin-top: 30px;
+  margin-left: 40px;
+}
+
+.add-item-input{
+  width: 60%;
+  height: 50px;
+}
+
+.send-button{
+  width: 90px;
+  height: 55px;
+  color: white;
+  font-size: 25px;
+  background-color: #175B9F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
