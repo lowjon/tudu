@@ -1,0 +1,31 @@
+body{
+  background-color: #eee;
+}
+
+.nav-section{
+  height: 10vh;
+  width: 100%;
+  background-color: #175B9F;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-title{
+  color: white;
+  font-size: 35px;
+}
+
+.footer-text{
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #175B9F;
+  height: 5vh;
+  width: 100%;
+  color: white;
+  font-size: 25px;
+}
